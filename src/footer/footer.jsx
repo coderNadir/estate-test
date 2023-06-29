@@ -1,0 +1,39 @@
+import { FormCTA } from '../form-cta/form-cta';
+
+export function Footer() {
+	return (
+		<footer className="p-4 grid place-items-center gap-8 bg-black text-white relative">
+			<img src="/images/icon-logo.png" alt="icon logo in the footer" />
+			<ul className="grid gap-2 place-items-center capitalize">
+				<li>home</li>
+				<li>developer</li>
+				<li>case studies</li>
+				<li>deals</li>
+				<li>contact</li>
+				<li>about us</li>
+			</ul>
+			<ul className="grid grid-cols-2 gap-2 place-items-center capitalize">
+				<li className="flex gap-1 items-center">
+					<img
+						src="images/icon-whatsapp.svg"
+						alt=""
+						className="w-8 p-1 rounded-full bg-[#fafafa]"
+					/>
+					<span>whatsApp</span>
+				</li>
+				<li className="flex gap-1 items-center">
+					<img
+						src="images/icon-telegram.svg"
+						alt=""
+						className="w-8 p-1 rounded-full bg-[#fafafa]"
+					/>
+					<span>telegram</span>
+				</li>
+			</ul>
+
+			<FormCTA></FormCTA>
+
+			<div className="h-2 bg-white w-full rounded-tl-2xl rounded-br-2xl"></div>
+		</footer>
+	);
+}

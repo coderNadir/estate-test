@@ -14,7 +14,7 @@ export function Header() {
         rgba(230, 230, 230, 0.2)
       ), url('/images/backside-view.jpg')`,
 			}}
-			className="mb-24 w-full h-screen bg-cover bg-center overflow-x-hidden grid"
+			className="mb-24 w-full h-screen bg-cover bg-center bg-no-repeat overflow-x-hidden grid animate-bg-positions duration-1000"
 		>
 			<div>
 				<Nav></Nav>

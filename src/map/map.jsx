@@ -21,7 +21,7 @@ export function Map() {
 				<div
 					id="map"
 					style={{ height: '60vh', width: '90%' }}
-					className="overflow-hidden rounded-xl"
+					className="overflow-hidden rounded-tl-2xl rounded-br-2xl"
 				>
 					<GoogleMapReact
 						center={defaultProps.center}

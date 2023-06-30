@@ -1,9 +1,9 @@
 export function Features() {
 	return (
 		<section id="features" className="px-4 mb-24">
-			<ul className="grid gap-16">
-				<li>
-					<div className="bg-[#f0f0f0] px-2 py-8 relative grid place-items-center rounded-tl-2xl rounded-br-2xl shadow-xl">
+			<ul className="grid gap-16 md:grid-cols-3">
+				<li className="">
+					<div className="bg-[#f0f0f0] h-full px-2 py-8 relative grid place-items-center rounded-tl-2xl rounded-br-2xl shadow-xl">
 						<img
 							src="/images/icon-luxury.png"
 							alt="luxury property"
@@ -20,8 +20,8 @@ export function Features() {
 						</p>
 					</div>
 				</li>
-				<li>
-					<div className="bg-[#f0f0f0] px-2 py-8 relative grid place-items-center rounded-tl-2xl rounded-br-2xl shadow-xl">
+				<li className="">
+					<div className="bg-[#f0f0f0] h-full px-2 py-8 relative grid place-items-center rounded-tl-2xl rounded-br-2xl shadow-xl">
 						<img
 							src="/images/icon-location.png"
 							alt="prime location"
@@ -38,8 +38,8 @@ export function Features() {
 						</p>
 					</div>
 				</li>
-				<li>
-					<div className="bg-[#f0f0f0] px-2 py-8 relative grid place-items-center rounded-tl-2xl rounded-br-2xl shadow-xl">
+				<li className="">
+					<div className="bg-[#f0f0f0] h-full px-2 py-8 relative grid place-items-center rounded-tl-2xl rounded-br-2xl shadow-xl">
 						<img
 							src="/images/icon-secure.png"
 							alt="secure investement"

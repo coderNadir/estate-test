@@ -22,6 +22,22 @@ const images = [
 		src: '/images/room-2.jpg',
 		alt: 'second room',
 	},
+	{
+		src: '/images/room-3.jpg',
+		alt: 'second room',
+	},
+	{
+		src: '/images/room-4.jpg',
+		alt: 'second room',
+	},
+	{
+		src: '/images/kitchen.jpg',
+		alt: 'third room',
+	},
+	{
+		src: '/images/backside-view.jpg',
+		alt: 'third room',
+	},
 ];
 
 export function SwipeGalery() {
@@ -36,8 +52,8 @@ export function SwipeGalery() {
 	};
 
 	return (
-		<section id="gallery" className="mb-24">
-			<div className="flex gap-2 overflow-scroll p-4 ">
+		<section id="gallery" className="mb-24 w-full h-full ">
+			<div className="px-4 md:w-8/12 w-full h-auto m-auto">
 				<Swiper
 					effect={'coverflow'}
 					grabCursor={true}
@@ -52,17 +68,18 @@ export function SwipeGalery() {
 					}}
 					pagination={true}
 					modules={[EffectCoverflow, Pagination]}
-					className="mySwiper"
+					className="mySwiper h-[50vh] md:h-[80vh]"
 				>
 					{images.map((data) => {
 						return (
 							<SwiperSlide>
-								<img
-									src={data.src}
-									alt={data.alt}
-									className="rounded-tl-2xl rounded-br-2xl"
+								<div
+									style={{
+										backgroundImage: `url('${data.src}')`,
+									}}
+									className="rounded-tl-2xl rounded-br-2xl w-full h-full bg-cover bg-center"
 									onClick={() => openModal(data.src)}
-								/>
+								></div>
 							</SwiperSlide>
 						);
 					})}
@@ -73,7 +90,7 @@ export function SwipeGalery() {
 					isOpen={selectedImage !== null}
 					onRequestClose={closeModal}
 					contentLabel="Enlarged Image"
-					className="bg-transparent shadow-2xl ring-1 ring-white"
+					className=" shadow-2xl ring-1 ring-white"
 					style={{
 						overlay: {
 							position: 'fixed',

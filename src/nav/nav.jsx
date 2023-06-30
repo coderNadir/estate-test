@@ -57,7 +57,7 @@ export function Nav() {
 					/>
 				)}
 				<div
-					className={`bg-[#e6E6e6] h-screen w-full z-10 justify-self-end opacity-90 absolute top-0 transition ease-in-out duration-300 md:bg-transparent md:h-fit md:w-fit md:mr-6 md:transform-none ${
+					className={`bg-[#e6E6e6] h-screen w-full z-10 justify-self-end opacity-90 absolute top-0 transition ease-in-out duration-500 md:bg-transparent md:h-fit md:w-fit md:mr-6 md:transform-none ${
 						isNavOpen ? 'translate-x-1/2' : 'translate-x-full'
 					}`}
 				>
@@ -65,7 +65,9 @@ export function Nav() {
 						<img
 							src="/images/icon-close.svg"
 							alt="icon close nav bar"
-							className="text-white md:hidden h-6"
+							className={`text-white md:hidden h-6 ${
+								isNavOpen ? 'animate-spin-right' : ''
+							} ${!isNavOpen ? 'animate-spin-left' : ''}`}
 							onClick={() => toggleNav(isNavOpen)}
 						/>
 						{/* <fa-icon

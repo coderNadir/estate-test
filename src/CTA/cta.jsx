@@ -1,9 +1,9 @@
 export function CTA() {
 	return (
-		<section className="px-4 mb-24">
+		<section className="px-4 mb-24 grid place-items-center">
 			<div className="bg-[#f0f0f0] px-4 py-6 shadow-lg grid gap-8 rounded-tl-2xl rounded-br-2xl">
 				<div className="text-center">
-					<h2 className="mb-2 text-4xl font-bold">
+					<h2 className="mb-2 text-4xl text-gray-500 font-bold">
 						Ready for the deal?
 					</h2>
 					<p className="text-gray-400">

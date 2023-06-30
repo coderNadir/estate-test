@@ -8,7 +8,7 @@ import { Map } from '../map/map';
 
 export function Home() {
 	return (
-		<>
+		<div className="font-[Belanosima]">
 			<Header></Header>
 			{/* <Gallery></Gallery> */}
 			<SwipeGalery></SwipeGalery>
@@ -16,6 +16,6 @@ export function Home() {
 			<Map></Map>
 			<CTA></CTA>
 			<Footer></Footer>
-		</>
+		</div>
 	);
 }

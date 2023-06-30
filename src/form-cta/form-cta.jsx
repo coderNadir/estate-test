@@ -4,7 +4,7 @@ export function FormCTA() {
 	return (
 		<>
 			{/* form */}
-			<div className="bg-gray-100 w-3/4 mb-4 opacity-80 px-4 py-2 grid place-items-center h-auto shadow-2xl place-self-center self-end rounded-tl-2xl rounded-br-2xl overflow-hidden">
+			<div className="bg-gray-100 mb-4 opacity-80 px-4 py-2 w-3/4 md:w-auto md:min-w-[50%] grid place-items-center h-auto shadow-2xl place-self-center self-end rounded-tl-2xl rounded-br-2xl overflow-hidden">
 				<form action="" className=" w-3/4">
 					<div className="">
 						<label
@@ -26,7 +26,7 @@ export function FormCTA() {
 						</div>
 					</div>
 					<button
-						className="w-full font-semibold bg-black text-white px-6 py-2 rounded-tl-2xl rounded-br-2xl grid grid-cols-2 gap-2  place-items-center"
+						className="w-full font-semibold bg-black text-white px-6 py-2 rounded-tl-2xl rounded-br-2xl grid grid-cols-2 gap-2  place-items-center group"
 						onClick={(e) => {
 							e.preventDefault();
 						}}
@@ -37,7 +37,7 @@ export function FormCTA() {
 						<img
 							src="/images/icon-right-arrow.png"
 							alt=""
-							className="w-6 mt-1 ml-4 place-self-start"
+							className="w-6 mt-1 ml-4 place-self-start group-hover:animate-inline"
 						/>
 					</button>
 				</form>

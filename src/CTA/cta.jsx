@@ -11,13 +11,13 @@ export function CTA() {
 						out in a moment!
 					</p>
 				</div>
-				<div className="grid grid-cols-2 place-items-center">
+				<div className="grid grid-cols-2 gap-2 place-items-center">
 					<p className="ml-16 text-4xl self-center font-bold">
 						+9711234567
 					</p>
 					<a
 						href="tel:+213456789"
-						className="mr-4 animate-bounce p-2 shadow-lg rounded-full place-self-end bg-[#fafafa]"
+						className="mr-4 w-14 animate-bounce p-2 shadow-lg rounded-full place-self-end bg-[#fafafa]"
 					>
 						<img
 							src="images/icon-call.png"

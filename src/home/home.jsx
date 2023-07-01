@@ -5,6 +5,7 @@ import { Gallery } from '../gallery/gallery';
 import { SwipeGalery } from '../gallery/swiper';
 import { Header } from '../header/header';
 import { Map } from '../map/map';
+import { RegisterEmail } from '../register-email/register-email';
 
 export function Home() {
 	return (
@@ -13,8 +14,9 @@ export function Home() {
 			{/* <Gallery></Gallery> */}
 			<SwipeGalery></SwipeGalery>
 			<Features></Features>
-			<Map></Map>
 			<CTA></CTA>
+			<Map></Map>
+			<RegisterEmail></RegisterEmail>
 			<Footer></Footer>
 		</div>
 	);
